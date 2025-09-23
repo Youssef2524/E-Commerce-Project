@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('providers', function (Blueprint $table) {
             $table->id();
-            $table->enum('provider', ['google','github']);
+            $table->enum('provider', ['google','facebook']);
             $table->string('provider_id');
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
