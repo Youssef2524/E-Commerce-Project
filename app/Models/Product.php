@@ -11,7 +11,11 @@ class Product extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'name','description','price','product_quantity','maincategory_subcategory_id'
+        'name',
+        'description',
+        'price',
+        'product_quantity',
+        'maincategory_subcategory_id'
     ];
 
     public function categoryRelation()

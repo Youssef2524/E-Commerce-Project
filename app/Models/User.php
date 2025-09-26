@@ -5,6 +5,7 @@ use PHPOpenSourceSaver\JWTAuth\Contracts\JWTSubject;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
@@ -14,8 +15,14 @@ class User extends Authenticatable implements JWTSubject
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'first_name','last_name','email','password','phone','is_male',
-        'birthdate','telegram_user_id'
+        'first_name',
+        'last_name',
+        'email',
+        'password',
+        'phone',
+        'is_male',
+        'birthdate',
+        'telegram_user_id'
     ];
 
     public function providers()

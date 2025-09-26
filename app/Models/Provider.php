@@ -10,7 +10,7 @@ class Provider extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = ['provider','provider_id','user_id'];
+    protected $fillable = ['provider', 'provider_id', 'user_id'];
 
     public function user()
     {

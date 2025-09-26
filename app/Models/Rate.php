@@ -9,7 +9,7 @@ class Rate extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = ['user_id','product_id','rating','review'];
+    protected $fillable = ['user_id', 'product_id', 'rating', 'review'];
 
     public function user()
     {

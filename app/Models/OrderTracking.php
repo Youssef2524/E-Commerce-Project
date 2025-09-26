@@ -10,7 +10,7 @@ class OrderTracking extends Model
 {
     use HasFactory, SoftDeletes;
 
-    protected $fillable = ['order_id','old_status','new_status'];
+    protected $fillable = ['order_id', 'old_status', 'new_status'];
 
     public function order()
     {

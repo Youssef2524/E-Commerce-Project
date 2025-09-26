@@ -11,8 +11,15 @@ class Address extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'user_id','country_id','city_id','zone_id',
-        'street','building','apartment','postal_code','is_default'
+        'user_id',
+        'country_id',
+        'city_id',
+        'zone_id',
+        'street',
+        'building',
+        'apartment',
+        'postal_code',
+        'is_default'
     ];
 
     public function user()

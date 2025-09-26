@@ -3,7 +3,7 @@
 namespace App\Services\Auth;
 
 use App\Models\User;
-use App\Enums\RoleUser;
+use App\Enums\UserRoles;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use PHPOpenSourceSaver\JWTAuth\Facades\JWTAuth;
@@ -55,7 +55,7 @@ class AuthService
         $user->save();
 
         // Assign customer role to user
-        $user->assignRole(RoleUser::Customer);
+        $user->assignRole(UserRoles::Customer);
 
         // Generate token using JWT
         $token = JWTAuth::fromUser($user);
