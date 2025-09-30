@@ -12,7 +12,7 @@ class MainCategorySubCategory extends Model
 
     protected $table = 'maincategory_subcategory';
 
-    protected $fillable = ['main_category_id','sub_category_id'];
+    protected $fillable = ['main_category_id', 'sub_category_id'];
 
     public function mainCategory()
     {
